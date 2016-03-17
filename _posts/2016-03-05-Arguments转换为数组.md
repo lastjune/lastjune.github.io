@@ -1,3 +1,10 @@
+---
+layout: post
+title: arguments 转换为数组的安全方式
+date: 2016-03-03
+description: 特定的写法会带来浏览器js引擎性能优化产生问题
+---
+
 #使用Array.prototype.slice.apply(arguments)转换arguments为数组会造成javascript引擎（例如V8引擎）的优化出现问题
 
 通常在方法内部，习惯性的通过以下代码将arguments转换为数组，因为数组操作更加方便便利，有很多原生的方法可以使用
